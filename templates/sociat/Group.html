@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends 'sociat/index.html' %}
+{% block body_block %}
+<div class="group firm">
+  <form class="" enctype="multipart/form-data"  action=""{% url 'Groups:Groups' %}"" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input  class="sbtn" type="submit" name="submit" value="Submit">
+ </form>
+</div>
+ {% endblock %}

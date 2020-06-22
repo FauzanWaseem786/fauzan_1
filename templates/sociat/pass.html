@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{%  load static %}
+{% block body_block %}
+<div class="log" >
+  {% for desst in dest %}
+      <h1>{{desst.username}}</h1>
+      <h1>{{desst.email}}</h1>
+  {% endfor%}
+
+
+</div>
+{% endblock %}
